@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>POKEMON</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="log">
+            <form name="login">
+                <br><label for="utilisateur">Nom d'utilisateur</label>
+                <input type="text" id="username" name="user">
+                <br><label for="motdepasse">Mot de passe</label>
+                <input type="text" id="passwordL" name="pw">
+                <br><input type="reset" value="connexion" name="connection" onclick="Login()">
+            </form>
+        </div>
+
+        <div id="inscription">
+            <form name="inscription2">
+                <br><label for="utilisateur">Nom d'utilisateur</label>
+                <input type="text" id="username" name="user">
+                <br><label for="courriel">Adresse courriel</label>
+                <input type="text" id="email" name="email">
+                <br><label for="motdepasse">Mot de passe</label>
+                <input type="text" id="password" name="pw">
+
+                <br><label for="confirmation">Confirmation du mot de passe</label>
+                <input type="text" id="confirmPassword" name="confirm">
+                <br><input type="submit" value="confirmer" name="bouton" onclick="inscrire()">
+            </form>
+        </div>
+    </body>
+</html>
