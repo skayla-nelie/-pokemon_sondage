@@ -1,69 +1,115 @@
-:root{
-    --body: #B0B8B4FF;
-    --bloo: rgb(0, 200, 255);
+:root {
+  --body: #b0b8b4ff;
+  --bloo: rgb(0, 200, 255);
 }
 
-@font-face{
-  src: url("font/Pokemon\ Solid.ttf") format('truetype');
-  font-family:"Pokemon" ;
+@font-face {
+  src: url("font/Pokemon\ Solid.ttf") format("truetype");
+  font-family: "Pokemon";
 }
 
-@font-face{
-  src: url("font/Pokemon\ Classic.ttf") format('truetype');
+@font-face {
+  src: url("font/Pokemon\ Classic.ttf") format("truetype");
   font-family: "PokemonC";
 }
 
-body{
-    background-color: let(--body);
-    background-image: url(img/pokemon_b.jpeg);
-    margin: auto;
+body {
+  background-color: let(--body);
+  background-image: url(img/pokemon_b.jpeg);
+  margin: auto;
 }
 #log {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%,40%);
-    color: #ececec;
-    font-family:"PokemonC";
-    background-color:#ececec;
-    padding:10px;
-    border: 10px solid white;
-    border-radius: 20px;
-    background-image: linear-gradient(#FDF8F7, #99EBF6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  color: #ececec;
+  font-family: "PokemonC";
+  background-color: #ececec;
+  padding: 10px;
+  border: 10px solid white;
+  border-radius: 20px;
+  background-image: linear-gradient(#fdf8f7, #99ebf6);
 }
 
-label{
-    z-index:3;
-    color:black;
+label {
+  z-index: 3;
+  color: black;
 }
 
 #inscription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 260px;
-    background-color: #ececec;
-    padding: 20px 30px;
-    box-shadow: 0 40px 50px rgb(0 0 0 / 90%);
-    z-index: 1000;
-    transition: all 2s;
-    font-family: "PokemonC";
-    border: 10px solid white;
-    border-radius: 20px;
-    background-image: linear-gradient(#99EBF6, #F67445);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 260px;
+  background-color: #ececec;
+  padding: 20px 30px;
+  box-shadow: 0 40px 50px rgb(0 0 0 / 90%);
+  z-index: 1000;
+  transition: all 2s;
+  font-family: "PokemonC";
+  border: 10px solid white;
+  border-radius: 20px;
+  background-image: linear-gradient(#99ebf6, #f67445);
 }
 
-h1{
-font-family:"Pokemon";
-color:White;
+h1 {
+  font-family: "Pokemon";
+  color: White;
 }
 
-#passwordL{
-transform: translateX(48px);
+#passwordL {
+  transform: translateX(48px);
+}
+.wrapper {
+  background-color: rgba(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 30px;
+  width: 100%;
+  height: 10%;
+  border-radius: 10%;
+  transform: translate(80%, 0%);
+  color: #000000;
+  font-family: "PokemonC";
+  max-width: 500px;
+  background-color: #ececec;
+  padding: 20px 20px;
+  box-shadow: 0 40px 50px rgb(0 0 0 / 90%);
+  z-index: 1000;
+  transition: all 2s;
+  font-family: "PokemonC";
+  border: 10px solid white;
+  border-radius: 20px;
+  background-image: linear-gradient(#99ebf6, #f67445);
+  text-align: center;
+}
+
+.pokemon {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: solid 8px #219e36;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.pokemon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

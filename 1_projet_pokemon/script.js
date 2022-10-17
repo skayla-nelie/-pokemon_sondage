@@ -81,8 +81,20 @@ function afficherContact() {
 }
 
 //tableau + "for in" ou "for of"
-
+const pokemonStart = ["1.Charmander", "2.Pikachu", "3.Squirtle", "4.Bulbasaur"];
+let text = "";
+for (let x of pokemonStart) {
+  text += x + "<br>";
+}
+document.getElementById("txt").innerHTML = text;
 //ajout 3 fonction dans le code"
 (() => alert("Veuillez répondre à ce sondage"))();
 //2) une deuxième qui est une fonction d’ordre supérieure
+
 //3) une troisième qui est une fonction de fermeture
+let a = 1;
+myFunction();
+
+function myFunction() {
+  document.getElementById("choix").innerHTML = a * a;
+}
