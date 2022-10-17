@@ -98,3 +98,13 @@ myFunction();
 function myFunction() {
   document.getElementById("choix").innerHTML = a * a;
 }
+
+//1) Ajoutez 2 classes à votre code :
+
+//➢ la classe Utilisateur : qui correspond aux utilisateurs de votre site web. xavier
+//➢ la classe Question qui correspond aux questions de votre sondage. sky
+
+//2) Ajouter une sous-classe qui hérite d’une des classes créées. sky
+
+//3) Instancier les objets nécessaires à votre code qui à partir des classes et sous-classe
+//correspondantes. xavier
