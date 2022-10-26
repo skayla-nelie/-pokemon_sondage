@@ -103,12 +103,12 @@ function myFunction() {
 
 //➢ la classe Utilisateur : qui correspond aux utilisateurs de votre site web. xavier
 //➢ la classe Question qui correspond aux questions de votre sondage. sky(12)
-//question 1:  pokemon de debuut
+//question 1:  pokemon de debut
 //question 2:  élément du dresseur
 //question 3:  région du dresseur
 //question 4:  meilleur élément
-//question 5:  élément du dresseur
-//question 6:  élément du dresseur
+//question 5:  Quel est ton Pokémon de type Feu préféré ?
+//question 6:  quel est ton légendaire préféré
 //question 7:  élément du dresseur
 //question 8:  élément du dresseur
 //question 9:  élément du dresseur
