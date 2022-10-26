@@ -102,7 +102,19 @@ function myFunction() {
 //1) Ajoutez 2 classes à votre code :
 
 //➢ la classe Utilisateur : qui correspond aux utilisateurs de votre site web. xavier
-//➢ la classe Question qui correspond aux questions de votre sondage. sky
+//➢ la classe Question qui correspond aux questions de votre sondage. sky(12)
+//question 1:  pokemon de debuut
+//question 2:  élément du dresseur
+//question 3:  région du dresseur
+//question 4:  meilleur élément
+//question 5:  élément du dresseur
+//question 6:  élément du dresseur
+//question 7:  élément du dresseur
+//question 8:  élément du dresseur
+//question 9:  élément du dresseur
+//question 10: élément du dresseur
+//question 11: élément du dresseur
+//question 12: élément du dresseur
 
 //2) Ajouter une sous-classe qui hérite d’une des classes créées. sky
 
