@@ -92,29 +92,54 @@ document.getElementById("txt").innerHTML = text;
 //2) une deuxième qui est une fonction d’ordre supérieure
 
 //3) une troisième qui est une fonction de fermeture
-let a = 1;
-myFunction();
-
-function myFunction() {
-  document.getElementById("choix").innerHTML = a * a;
-}
 
 //1) Ajoutez 2 classes à votre code :
 
 //➢ la classe Utilisateur : qui correspond aux utilisateurs de votre site web. xavier
+class Utilisateur {
+  constructor(prenom, nom) {
+    this.prenom = prenom;
+    this.nom = nom;
+  }
+}
 //➢ la classe Question qui correspond aux questions de votre sondage. sky(12)
+class Question {
+  constructor(question) {
+    this.sentence = question;
+  }
+  present() {
+    return " Question # " + this.sentence;
+  }
+}
+
+class answer extends Question {
+  constructor(question, rep) {
+    super(question);
+    this.answer = rep;
+  }
+  show() {
+    return this.present() + ",  " + this.answer;
+  }
+}
+
+myQuestion1 = new answer(
+  "1. Quel pokemon choissiriez vous pour commencer votre aventure?",
+  "<br> a.pikachu <br> b.squirtle <br> c.bulbasaur <br> c.chamander"
+);
+document.getElementById("question").innerHTML = myQuestion1.show();
+
 //question 1:  pokemon de debut
 //question 2:  élément du dresseur
 //question 3:  région du dresseur
 //question 4:  meilleur élément
 //question 5:  Quel est ton Pokémon de type Feu préféré ?
-//question 6:  quel est ton légendaire préféré
-//question 7:  élément du dresseur
-//question 8:  élément du dresseur
-//question 9:  élément du dresseur
-//question 10: élément du dresseur
-//question 11: élément du dresseur
-//question 12: élément du dresseur
+//question 6:  quel est ton légendaire préféré?
+//question 7:  lequel de ces pokemon est le plus fort?
+//question 8:  quel pokemon choisirait tu?
+//question 9:  quel est selon toi l'élément de ce pokemon?
+//question 10:  quel est selon toi l'élément de ce pokemon?
+//question 11: quel jeu choisirait tu?
+//question 12: quel jeu choisirait tu?
 
 //2) Ajouter une sous-classe qui hérite d’une des classes créées. sky
 
