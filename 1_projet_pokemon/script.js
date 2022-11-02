@@ -157,9 +157,9 @@ $("textarea").on('keyup.enter', function(){
 });//End Function
 
 new Vue({
-  el: "#app",
+  el: "#commentaire",
   data:{
-     title: 'Add a comment',
+     title: 'Ajouter commentaire',
     newItem: '',
     item: [],
   },
