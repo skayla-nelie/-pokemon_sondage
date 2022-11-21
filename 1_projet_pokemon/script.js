@@ -128,46 +128,48 @@ myQuestion1 = new answer(
 );
 document.getElementById("question").innerHTML = myQuestion1.show();
 
-//question 1:  pokemon de debut
-//question 2:  élément du dresseur
-//question 3:  région du dresseur
-//question 4:  meilleur élément
-//question 5:  Quel est ton Pokémon de type Feu préféré ?
-//question 6:  quel est ton légendaire préféré?
-//question 7:  lequel de ces pokemon est le plus fort?
-//question 8:  quel pokemon choisirait tu?
-//question 9:  quel est selon toi l'élément de ce pokemon?
-//question 10:  quel est selon toi l'élément de ce pokemon?
-//question 11: quel jeu choisirait tu?
-//question 12: quel jeu choisirait tu?
+//question 1:  Quel est votre prénom?
+//question 2:  Quel est votre nom?
+//question 3:  Quel est votre âge?
+//question 4:  Quel est votre sexe?
+//question 5:  Quelle pokémon choisiriez-vous pour débuter votre quête en tant que dresseur pokemon?
+//question 6:  Quel est la région d'origine du personnage principale (ash ketchum) de la série pokemon: kanto,johto, hoenn ou sinnoh?
+//question 7:  Selon vous, quel est le meilleur élément: feu, glace, plante, eau, électricité, ténèbres, wind, dragon, psychique, rock, poison, fée, métal, terre, volant, insecte, combat, fantômes, normal.
+//question 8:  Entre ces trois pokemon de type feu, lequel auriez-vous choisi: charizard, flareon, incineroar.
+//question 9:  Entre ces trois pokemon de type eau, lequel auriez-vous choisi: blastoise, vaporeon, poliwhirl.
+//question 10: Entre ces trois pokemon de type légendaire, lequel auriez-vous choisi: mewtwo, giratina, zapdos.
+//question 11: Entre ces trois pokemon de type légendaire, lequel est le plus fort: mewtwo, giratina, zapdos.
+//question 12: Quel est selon toi l'élément de ce pokemon?(xerneas,fée)
+//question 13: Quel est selon toi l'élément de ce pokemon?(ninetails, feu)
+//question 14: Quel est selon toi l'élément de ce pokemon?(machamp, combat)
+//question 15: Si on te donne le choix entre 2 jeux de pokemon qui te sont offert gratuitement, lequel choisirait tu, sachant qu'a la fin du jeux tu finira avec le pokemon qui est en couverture?(pokemon sword and shield.)
+//question 16: Si on te donne le choix entre 2 jeux de pokemon qui te sont offert gratuitement, lequel choisirait tu, sachant qu'a la fin du jeux tu finira avec le pokemon qui est en couverture(scarlet and violet.)
 
 //2) Ajouter une sous-classe qui hérite d’une des classes créées. sky
 
 //3) Instancier les objets nécessaires à votre code qui à partir des classes et sous-classe
 //correspondantes. xavier
 
-$(document).ready(function(){ 
-  
-  $(".primaryContained").on('click', function(){
-  $(".comment").addClass("commentClicked");
-});//end click
-$("textarea").on('keyup.enter', function(){
-  $(".comment").addClass("commentClicked");
-});//end keyup
-});//End Function
+$(document).ready(function () {
+  $(".primaryContained").on("click", function () {
+    $(".comment").addClass("commentClicked");
+  }); //end click
+  $("textarea").on("keyup.enter", function () {
+    $(".comment").addClass("commentClicked");
+  }); //end keyup
+}); //End Function
 
 new Vue({
   el: "#commentaire",
-  data:{
-     title: 'Ajouter commentaire',
-    newItem: '',
+  data: {
+    title: "Ajouter commentaire",
+    newItem: "",
     item: [],
   },
-  methods:{
-    addItem  (){
-    this.item.push(this.newItem);
+  methods: {
+    addItem() {
+      this.item.push(this.newItem);
       this.newItem = "";
-    }
-}
-
+    },
+  },
 });
