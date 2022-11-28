@@ -80,32 +80,61 @@ function afficherContact() {
   document.getElementById("construction").style.display = "none";
 }
 
-//tableau + "for in" ou "for of"
 const pokemonStart = ["1.Charmander", "2.Pikachu", "3.Squirtle", "4.Bulbasaur"];
 let text = "";
 for (let x of pokemonStart) {
   text += x + "<br>";
 }
 document.getElementById("txt").innerHTML = text;
-//ajout 3 fonction dans le code"
 (() => alert("Veuillez répondre à ce sondage"))();
 //2) une deuxième qui est une fonction d’ordre supérieure
 
 //3) une troisième qui est une fonction de fermeture
 
-//1) Ajoutez 2 classes à votre code :
-
-//➢ la classe Utilisateur : qui correspond aux utilisateurs de votre site web. xavier
 class Utilisateur {
-  constructor(prenom, nom) {
+  constructor(prenom, nom, age, sexe) {
     this.prenom = prenom;
     this.nom = nom;
+    this.nom = age;
+    this.nom = sexe;
   }
 }
 //➢ la classe Question qui correspond aux questions de votre sondage. sky(12)
 class Question {
-  constructor(question) {
-    this.sentence = question;
+  constructor(
+    q1,
+    q2,
+    q3,
+    q4,
+    q5,
+    q6,
+    q7,
+    q8,
+    q9,
+    q10,
+    q11,
+    q12,
+    q13,
+    q14,
+    q15,
+    q16
+  ) {
+    this.q1 = q1;
+    this.q2 = q2;
+    this.q3 = q3;
+    this.q4 = q4;
+    this.q5 = q5;
+    this.q6 = q6;
+    this.q7 = q7;
+    this.q8 = q8;
+    this.q9 = q9;
+    this.q10 = q10;
+    this.q11 = q11;
+    this.q12 = q12;
+    this.q13 = q13;
+    this.q14 = q14;
+    this.q15 = q15;
+    this.q16 = q16;
   }
   present() {
     return " Question # " + this.sentence;
