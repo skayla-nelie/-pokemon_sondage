@@ -144,7 +144,21 @@ document.getElementById("question").innerHTML = myQuestion1.show();
 //question 14: Quel est selon toi l'élément de ce pokemon?(machamp, combat)
 //question 15: Si on te donne le choix entre 2 jeux de pokemon qui te sont offert gratuitement, lequel choisirait tu, sachant qu'a la fin du jeux tu finira avec le pokemon qui est en couverture?(pokemon sword and shield.)
 //question 16: Si on te donne le choix entre 2 jeux de pokemon qui te sont offert gratuitement, lequel choisirait tu, sachant qu'a la fin du jeux tu finira avec le pokemon qui est en couverture(scarlet and violet.)
+fetch("user.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    show(data);
+  });
 
+fetch("answer.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    show(data);
+  });
 //2) Ajouter une sous-classe qui hérite d’une des classes créées. sky
 
 //3) Instancier les objets nécessaires à votre code qui à partir des classes et sous-classe
