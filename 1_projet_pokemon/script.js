@@ -1,3 +1,4 @@
+//MODULE 1
 function connexion() {
   let user = document.login.username.value;
   let password = document.login.password.value;
@@ -64,6 +65,7 @@ function Login() {
     inputPassword == utilisateur.password
   ) {
     document.location.href = "pokemonAccueil.html";
+    setTimeout(Login(), {}, 2000);
   } else {
     alert("Utilisateur invalide");
   }
@@ -80,17 +82,21 @@ function afficherContact() {
   document.getElementById("construction").style.display = "none";
 }
 
-const pokemonStart = ["1.Charmander", "2.Pikachu", "3.Squirtle", "4.Bulbasaur"];
-let text = "";
-for (let x of pokemonStart) {
-  text += x + "<br>";
-}
-document.getElementById("txt").innerHTML = text;
-(() => alert("Veuillez répondre à ce sondage"))();
+//MODULE 2
+
+// const pokemonStart = ["1.Charmander", "2.Pikachu", "3.Squirtle", "4.Bulbasaur"];
+// let text = "";
+// for (let x of pokemonStart) {
+//   text += x + "<br>";
+// }
+// document.getElementById("txt").innerHTML = text;
+
+(() => alert("Bienvenue sur notre site pokemon"))();
 //2) une deuxième qui est une fonction d’ordre supérieure
 
 //3) une troisième qui est une fonction de fermeture
 
+//MODULE 3
 class Utilisateur {
   constructor(prenom, nom, age, sexe) {
     this.prenom = prenom;
