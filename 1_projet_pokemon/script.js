@@ -170,7 +170,7 @@ document.getElementById("question").innerHTML = myQuestion1.show();
 //question 5:  Quelle pokémon choisiriez-vous pour débuter votre quête en tant que dresseur pokemon?
 //question 6:  Quel est la région d'origine du personnage principale (ash ketchum) de la série pokemon: kanto,johto, hoenn ou sinnoh?
 //question 7:  Selon vous, quel est le meilleur élément: feu, glace, plante, eau, électricité, ténèbres, wind, dragon, psychique, rock, poison, fée, métal, terre, volant, insecte, combat, fantômes, normal.
-//question 8:  Entre ces trois pokemon de type feu, lequel auriez-vous choisi: charizard, flareon, incineroar.
+//question 8:  Entre ces trois pokemon de type feu, lequel auriez-vous choisi: rapidash, flareon, cinderace.
 //question 9:  Entre ces trois pokemon de type eau, lequel auriez-vous choisi: blastoise, vaporeon, poliwhirl.
 //question 10: Entre ces trois pokemon de type légendaire, lequel auriez-vous choisi: mewtwo, giratina, zapdos.
 //question 11: Entre ces trois pokemon de type légendaire, lequel est le plus fort: mewtwo, giratina, zapdos.
